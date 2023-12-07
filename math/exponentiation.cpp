@@ -6,11 +6,8 @@ int fpow(int b, int e, int m) {
   int result = 1;
 
   while (e > 0) {
-    if (e & 1LL)
-      result = (result * b) % m;
-
-    e = e >> 1LL;
-
+    if (e & 1) result = (result * b) % m;
+    e >>= 1;
     b = (b * b) % m;
   }
 
