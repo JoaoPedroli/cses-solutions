@@ -10,7 +10,7 @@ int n;
  
 vector<vector<ii>> ns(MAX);
  
-long long djk(int s, int T = n) {
+ll djk(int s, int T = n) {
   vector<vector<ll>> dist(n+2, vector<ll>(2, INF));
   vector<vector<int>> vis(n+2, vector<int>(2));
   priority_queue<iii, vector<iii>, greater<iii>> pq;
