@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
 
   int n; cin>>n;

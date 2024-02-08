@@ -1,10 +1,9 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
  
 const int INF = 1<<30;
  
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
  
   int n, m;

@@ -6,7 +6,7 @@ const int MAX = 2e5+10;
 int ns[MAX], vis[MAX]={0};
 set<pair<int, int>> s;
 
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
 
   int n, m; cin>>n>>m;

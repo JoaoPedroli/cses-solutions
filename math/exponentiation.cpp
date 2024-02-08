@@ -1,20 +1,18 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 
 int fpow(int b, int e, int m) {
   int result = 1;
-
+  b %= m;
   while (e > 0) {
-    if (e & 1) result = (result * b) % m;
+    if (e&1) result = (1ll * result * b) % m;
     e >>= 1;
-    b = (b * b) % m;
+    b = (1ll * b * b) % m;
   }
-
   return result;
 }
 
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
 
   int n; cin>>n;

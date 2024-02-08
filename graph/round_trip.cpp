@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
 const int MAX = 1e5+5;
 vector<int> ns[MAX], vis(MAX), p(MAX);
@@ -27,7 +26,7 @@ void dfs(int u, int pai) {
   }
 }
  
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
  
   int n, m; cin>>n>>m;

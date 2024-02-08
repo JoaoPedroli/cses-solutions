@@ -1,16 +1,18 @@
 #include <bits/stdc++.h>
-#define int long long
 using namespace std;
+using ll = long long;
 using ii = pair<int, int>;
-using iii = tuple<int, int, int>;
+using iii = tuple<ll, int, int>;
  
-const int MAX = 1e5+5, INF = 1LL<<60;
+const int MAX = 1e5+5;
+const ll INF = 1LL<<60;
 int n;
  
 vector<vector<ii>> ns(MAX);
  
-int djk(int s, int T = n) {
-  vector<vector<int>> dist(n+2, vector<int>(2, INF)), vis(n+2, vector<int>(2));
+long long djk(int s, int T = n) {
+  vector<vector<ll>> dist(n+2, vector<ll>(2, INF));
+  vector<vector<int>> vis(n+2, vector<int>(2));
   priority_queue<iii, vector<iii>, greater<iii>> pq;
   dist[s][0] = 0;
   pq.emplace(dist[s][0], s, 0);
@@ -37,7 +39,7 @@ int djk(int s, int T = n) {
   return dist[T][1];
 }
  
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
  
   int m; cin>>n>>m;

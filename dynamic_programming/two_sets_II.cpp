@@ -24,7 +24,7 @@ int fpow(int b, int e, int m) {
   return result;
 }
  
-signed main() {
+int main() {
   cin.tie(nullptr)->sync_with_stdio(0);
   
   cin>>n;
